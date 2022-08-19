@@ -2,65 +2,104 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./assets/favicon.ico">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Онлайн-курс по созданию сайтов">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Алексей Борковский">
+  <link rel="shortcut icon" href="./assets/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
   <title>Основы сайтостроения</title>
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <div class="logoWrapper"></div>
-      <img src="" alt="Логотип IT-School">
+      <div class="logo-wrapper">
+        <img class="logo" src="./assets/logo.png" alt="Логотип IT-School" />
+      </div>
       <section class="contacts">
-        <h4>
-          Проект: "IT-school"
-        </h4>
-        <div>
-          Email: <a href="mailto:itka.school@gmail.com">itka.school@gmail.com</a>
+        <h4 class="contact__title">Проект: "IT-school"</h4>
+        <div class="contact">
+          <img class="contact__icon" src="./assets/gmail_logo.png" alt="Логотип Gmail" />
+          <a class="contact__link" href="mailto:itka.school@gmail.com">itka.school@gmail.com</a>
         </div>
-        <div>
-          <a href=" viber://add?number=+375291471834">Viber</a>
-
+        <div class="contact">
+          <img class="contact__icon" src="./assets/viber_logo.png" alt="Логотим Viber" />
+          <a class="contact__link" href=" viber://add?number=+375291471834">Viber</a>
         </div>
       </section>
     </header>
     <main>
-      <section>
-        <p>Приглашаем учащихся 7-10 классов на дистанционные онлайн-курсы</p>
+      <section class="section">
+        <p class="section__header">Приглашаем учащихся 7-10 классов на дистанционные онлайн-курсы</p>
         <h1>основы сайтостроения</h1>
         <ul>
-          <li>Вы изучите основу современного веба - языки HTML и CSS</li>
-          <li>Познакомитесь с практикой применения языка программирования JavaScript в сайтостроении</li>
-          <li>Самостоятельно создадите веб-сайты и разместите иx в сети Интернет</li>
-          <li>Пройдете первую ступень в освоении профессии Веб-разработчик</li>
-          <li>Получите знания необходимые для самостоятельного выполнения заказов по верстке сайтов</li>
+          <li class="section__item benefit">Вы изучите основу современного веба - языки HTML и CSS</li>
+          <li class="section__item benefit">
+            Познакомитесь с практикой применения языка программирования
+            JavaScript в сайтостроении
+          </li>
+          <li class="section__item benefit">
+            Самостоятельно создадите веб-сайты и разместите иx в сети Интернет
+          </li>
+          <li class="section__item benefit">
+            Пройдете первую ступень в освоении профессии Веб-разработчик
+          </li>
+          <li class="section__item benefit">
+            Получите знания необходимые для самостоятельного выполнения
+            заказов по верстке сайтов
+          </li>
         </ul>
+        <div class="button-wrapper">
+          <a class="button" href="" target="_blank">Записаться на бесплатый онлайн-семинар</a>
+        </div>
       </section>
-      <div><button>Записаться на бесплатый онлайн-семинар</button></div>
-      <section>
+      <section class="section">
         <h3>Курсы включают:</h3>
         <ul>
-          <li>Бесплатный YouTube-семинар для всех желающих (приглашаются как ученики, так и их родители)/ 17.09.2022 в
-            19:00</li>
-          <li>Шестнадцать оплачиваемых еженедельных занятий продолжительностью по восемьдесят минут / октябрь 2022 -
-            январь
-            2023</li>
-          <li>Интерактивный онлайн учебник для всех участников еженедельных занятий</li>
-          <li>Предоставление ссылки на видео-запись каждого занятия их участникам (и их родителям по запросу)</li>
-          <li>Ежедневные консультации с преподавателем в групповом чате / октябрь 2022 - февраль 2023</li>
-          <li>Cамостоятельное создание выпускных проектов с консультационной поддержкой преподавателя / январь 2023 -
-            февраль 2023</li>
-          <li>Организованную взаимопомощь в рамках специализированного онлайн-собщества для участников курсов / октябрь
-            2022 - ...</li>
+          <li class="section__item">
+            Бесплатный YouTube-семинар для всех желающих (приглашаются как
+            ученики, так и их родители)/ 17.09.2022 в 19:00
+          </li>
+          <li class="section__item">
+            Шестнадцать оплачиваемых еженедельных занятий продолжительностью
+            по восемьдесят минут / октябрь 2022 - январь 2023
+          </li>
+          <li class="section__item">
+            Интерактивный онлайн учебник для всех участников еженедельных
+            занятий
+          </li>
+          <li class="section__item">
+            Предоставление ссылки на видео-запись каждого занятия их
+            участникам (и их родителям по запросу)
+          </li>
+          <li class="section__item">
+            Ежедневные консультации с преподавателем в групповом чате /
+            октябрь 2022 - февраль 2023
+          </li>
+          <li class="section__item">
+            Cамостоятельное создание выпускных проектов с консультационной
+            поддержкой преподавателя / январь 2023 - февраль 2023
+          </li>
+          <li class="section__item">
+            Организованную взаимопомощь в рамках специализированного
+            онлайн-собщества для участников курсов / октябрь 2022 - ...
+          </li>
         </ul>
       </section>
-      <section><a href="" target="_blank">Узнать о курсаx больше</a></section>
-      <footer>Войди в IT вместе с IT-School!</footer>
+      <section class="section curiosity">
+        <a class="curiosity__link" href="" target="_blank"><img class="curiosity__icon" src="./assets/curiosity.png"
+            alt="Нарисованный человек с выражением заинтересованности"> Узнать о курсаx больше</a>
+      </section>
     </main>
+    <footer>
+      <h2>
+        Войди в IT вместе с IT-School!
+      </h2>
+      <div class="author">&#169; <a href="www.linkedin.com/in/aliaksei-barkouski-4972b2ba">Алексей Борковский</a></div>
+    </footer>
   </div>
 </body>
 
