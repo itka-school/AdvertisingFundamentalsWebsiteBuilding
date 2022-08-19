@@ -1,0 +1,29 @@
+:root {
+  --main-orange: #fc4c02;
+  --main-violet: #5d1597;
+  --main-background: rgb(225, 252, 252);
+  --task-background: rgb(255, 247, 224);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(./assets/background.jpg);
+  -moz-background-size: 100%; 
+  -webkit-background-size: 100%; 
+  -o-background-size: 100%;
+  background-size: 100%; 
+}
+
+.wrapper {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+  box-shadow: -5px 10px 8px lightgray;;
+  background-color: white;
+
+}
