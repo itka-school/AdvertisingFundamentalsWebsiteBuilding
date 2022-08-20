@@ -4,8 +4,10 @@
   --second-orange: #fd7843;
   --third-orange: #d6470e;
   --main-violet: #5d1597;
-  --main-background: rgb(225, 252, 252);
-  --task-background: rgb(255, 247, 224);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -20,7 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(./assets/background.jpg) no-repeat center center fixed;;
+  background: url(./assets/background.jpg) no-repeat center center fixed;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -56,12 +58,9 @@ header {
   width: 250px;
 }
 
-main {
-  height: 100%;
-}
-
+.contacts-mobile,
 .contacts {
-  flex-grow: 3;
+  flex-grow: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,7 +82,6 @@ main {
 
 .contact__link {
   margin-left: 10px;
-
   font-size: 1.6rem;
 }
 
@@ -118,8 +116,16 @@ h1 {
   font-size: 2rem;
 }
 
+h3 {
+  margin-left: 10px;
+}
+
 .benefit {
   font-size: 2.5rem;
+}
+
+.section__item > i {
+  font-size: 1.7rem;
 }
 
 .button {
@@ -141,7 +147,7 @@ h1 {
 }
 
 .curiosity {
-  margin: 50px auto;
+  margin: 50px auto 30px;
   text-align: center;
 }
 
@@ -154,26 +160,95 @@ h1 {
   vertical-align: bottom;
 }
 
+.curiosity__warning {
+  margin: 50px auto 0;
+  font-size: 1.5rem;
+  color: var(--main-orange);
+}
+
 footer {
-  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--main-violet);
-  color: white;
 }
 
 footer > h2 {
   flex-grow: 3;
   margin-top: 20px;
   font-size: 3rem;
-  /* text-align: center; */
+}
+
+footer * {
+  color: white;
 }
 
 .author {
   flex-grow: 1;
+  margin-bottom: 10px;
 }
 
-.author > a {
-  color: white;
+@media (max-width: 1200px) {
+  body {
+    background: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo-wrapper {
+    text-align: center;
+  }
+  .contacts {
+    display: none;
+  }
+  main > * {
+    width: 100%;
+  }
+  .section__header,
+  h1 {
+    width: auto;
+    font-size: 2rem;
+  }
+  .section__item {
+    font-size: 1.7rem;
+  }
+  .button {
+    display: inline-block;
+    height: auto;
+    margin: 0px 25px;
+  }
+  footer > h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 551px) {
+  .contacts-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo-wrapper {
+    margin: 0;
+  }
+
+  .logo {
+    width: 99%;
+  }
+  .button {
+    margin: 0 10px;
+  }
+  .contact {
+    text-align: center;
+  }
+}
+
+@media (max-width: 240px) {
+  .section__header,
+  h1,
+  h3 {
+    font-size: 1.7rem;
+  }
 }
