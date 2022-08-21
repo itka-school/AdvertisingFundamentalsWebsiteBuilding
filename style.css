@@ -124,6 +124,14 @@ h3 {
   font-size: 2.5rem;
 }
 
+.price {
+  margin-top: 50px;
+}
+
+.section__item-addition {
+  font-size: smaller;
+}
+
 .section__item > i {
   font-size: 1.7rem;
 }
