@@ -136,6 +136,16 @@ h3 {
   font-size: 1.7rem;
 }
 
+.img-mark {
+  list-style-type: none;
+  background: url("./assets/youtube.png") no-repeat 0 -1px;
+}
+
+.img-mark a {
+  padding-left: 33px;
+  vertical-align: bottom;
+}
+
 .button {
   text-decoration: none;
   border-radius: 10px;
