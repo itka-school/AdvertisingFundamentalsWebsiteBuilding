@@ -4,6 +4,7 @@
   --second-orange: #fd7843;
   --third-orange: #d6470e;
   --main-violet: #5d1597;
+  --patr: #ff5800;
 }
 
 * {
@@ -88,6 +89,7 @@ header {
 main > * {
   margin: auto;
   width: 80%;
+  text-align: center;
 }
 
 .section {
@@ -111,42 +113,9 @@ h1 {
   text-align: center;
 }
 
-.section__item {
-  margin-bottom: 15px;
-  font-size: 2rem;
-}
-
-h3 {
-  margin-left: 10px;
-}
-
-.benefit {
-  font-size: 2.5rem;
-}
-
-.price {
-  margin-top: 50px;
-}
-
-.section__item-addition {
-  font-size: smaller;
-}
-
-.section__item > i {
-  font-size: 1.7rem;
-}
-
-.img-mark {
-  list-style-type: none;
-  background: url("./assets/youtube.png") no-repeat 0 -1px;
-}
-
-.img-mark a {
-  padding-left: 33px;
-  vertical-align: bottom;
-}
-
 .button {
+  display: inline-block;
+  min-width: 205px;
   text-decoration: none;
   border-radius: 10px;
   box-shadow: 0 4px 0 var(--third-orange);
@@ -164,24 +133,18 @@ h3 {
   background-color: var(--second-orange);
 }
 
-.curiosity {
-  margin: 50px auto 30px;
-  text-align: center;
+.tube {
+  background-color: #c4302b;
+  box-shadow: 0 4px 0 #8a2421;
 }
 
-.curiosity__link {
-  font-size: 2rem;
+.tube:hover {
+  background-color: #eb3933;
 }
 
-.curiosity__icon {
-  width: 50px;
-  vertical-align: bottom;
-}
-
-.curiosity__warning {
-  margin: 50px auto 0;
-  font-size: 1.5rem;
-  color: var(--main-orange);
+.premium {
+  min-width: 210px;
+  min-height: 45px;
 }
 
 footer {
@@ -215,26 +178,27 @@ footer * {
 @media (max-width: 550px) {
   .logo-wrapper {
     text-align: center;
-  }
+  } 
+
   .contacts {
     display: none;
   }
+
   main > * {
     width: 100%;
   }
+
   .section__header,
   h1 {
     width: auto;
     font-size: 2rem;
   }
-  .section__item {
-    font-size: 1.7rem;
-  }
+
   .button {
-    display: inline-block;
     height: auto;
     margin: 0px 25px;
   }
+
   footer > h2 {
     font-size: 2rem;
     text-align: center;
@@ -255,9 +219,11 @@ footer * {
   .logo {
     width: 99%;
   }
+
   .button {
     margin: 0 10px;
   }
+
   .contact {
     text-align: center;
   }
@@ -265,8 +231,10 @@ footer * {
 
 @media (max-width: 240px) {
   .section__header,
-  h1,
-  h3 {
+  h1 {
     font-size: 1.7rem;
+  }
+  .button, .premium {
+    min-width: 90%;
   }
 }
