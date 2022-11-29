@@ -145,6 +145,7 @@ h1 {
 .premium {
   min-width: 210px;
   min-height: 45px;
+  font-size: 19px;
 }
 
 footer {
