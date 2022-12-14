@@ -148,6 +148,16 @@ h1 {
   font-size: 19px;
 }
 
+.disabled {
+  background-color: darkgray;
+  box-shadow: 0 4px 0 gray;
+}
+
+.disabled:hover {
+  background-color: silver;
+  cursor: not-allowed;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -179,7 +189,7 @@ footer * {
 @media (max-width: 550px) {
   .logo-wrapper {
     text-align: center;
-  } 
+  }
 
   .contacts {
     display: none;
@@ -235,7 +245,8 @@ footer * {
   h1 {
     font-size: 1.7rem;
   }
-  .button, .premium {
+  .button,
+  .premium {
     min-width: 90%;
   }
 }
