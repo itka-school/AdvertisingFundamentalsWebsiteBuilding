@@ -158,6 +158,12 @@ h1 {
   cursor: not-allowed;
 }
 
+.alarm {
+  margin-top: 10px;
+  font-size: 15px;
+  color: red;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -183,6 +189,12 @@ footer * {
 @media (max-width: 1200px) {
   body {
     background: none;
+  }
+}
+
+@media (min-width: 550px) {
+  .alarm {
+    visibility: hidden;
   }
 }
 
